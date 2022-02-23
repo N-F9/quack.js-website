@@ -1,6 +1,6 @@
 {
   "name": "quack.js-website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The website for Quack.js",
   "scripts": {
     "dev": "./node_modules/.bin/parcel index.html --out-dir docs",
