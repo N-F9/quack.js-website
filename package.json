@@ -3,9 +3,9 @@
   "version": "2.0.0",
   "description": "The website for Quack.js",
   "scripts": {
-		"compile": "rm -rf docs && npm run build && cp ./CNAME ./docs/CNAME",
-    "dev": "./node_modules/.bin/parcel index.html --out-dir docs",
-    "build": "./node_modules/.bin/parcel build index.html --out-dir docs --public-url ./"
+    "compile": "rm -rf docs && npm run build && cp ./CNAME ./docs/CNAME",
+    "dev": "./node_modules/.bin/parcel index.html --dist-dir dev",
+    "build": "./node_modules/.bin/parcel build index.html --dist-dir docs --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/N-F9/quack.js-website#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "@parcel/packager-raw-url": "^2.3.2",
+    "@parcel/transformer-webmanifest": "^2.3.2",
+    "parcel": "^2.0.0"
   }
 }
