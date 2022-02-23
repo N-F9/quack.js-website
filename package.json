@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "The website for Quack.js",
   "scripts": {
-		"clean": "rm -rf docs",
+		"compile": "rm -rf docs && npm run build && cp ./CNAME ./docs/CNAME",
     "dev": "./node_modules/.bin/parcel index.html --out-dir docs",
     "build": "./node_modules/.bin/parcel build index.html --out-dir docs --public-url ./"
   },
