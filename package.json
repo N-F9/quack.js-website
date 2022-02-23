@@ -1,0 +1,23 @@
+{
+  "name": "quack.js-website",
+  "version": "1.0.0",
+  "description": "The website for Quack.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/parcel index.html --out-dir docs",
+    "build": "./node_modules/.bin/parcel build index.html --out-dir docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N-F9/quack.js-website.git"
+  },
+  "keywords": [],
+  "author": "Nick Ferguson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/N-F9/quack.js-website/issues"
+  },
+  "homepage": "https://github.com/N-F9/quack.js-website#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
